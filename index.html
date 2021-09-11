@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Mise en place d'une interface de site barber21 en css et javascript"
+      content="Exemple d'une interface de site barber21 en css et javascript"
     />
     <title>Barber21</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/baseMedias.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./ressources/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./ressources/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./ressources/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./ressources/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./ressources/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Police de caractère -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,11 +55,13 @@
     <!-- Accueil -->
     <header id="accueil">
       <nav id="navigation">
-        <a href="#accueil" class="lienNav">Accueil</a>
-        <a href="#valeurs" class="lienNav">Nos Valeurs</a>
-        <a href="#tarifs" class="lienNav">Nos Tarifs</a>
-        <a href="#contact" class="lienNav">Contact</a>
-        <a class="icon" id="icon"><i class="fas fa-bars"></i></a>
+        <a href="#accueil" class="lienNav" onclick="toggleNav()">Accueil</a>
+        <a href="#row" class="lienNav" onclick="toggleNav()">Nos Valeurs</a>
+        <a href="#tarifs" class="lienNav" onclick="toggleNav()">Nos Tarifs</a>
+        <a href="#contact" class="lienNav" onclick="toggleNav()">Contact</a>
+        <a class="icon" id="icon" onclick="toggleNav()"
+          ><i class="fas fa-bars"></i
+        ></a>
       </nav>
 
       <h1>Votre Barbier traditionnel.</h1>
@@ -48,7 +76,7 @@
         <h2 class="titreAbout">Découvrez nos Valeurs.</h2>
       </div>
 
-      <div class="row">
+      <div id="row">
         <div class="col-1-of-2">
           <h3 class="sousTitreAbout">Coupez les cheveux comme l'époque.</h3>
           <p class="paragraphe">
@@ -185,7 +213,7 @@
 
     <!-- Section Contact -->
 
-    <section class="contact">
+    <section id="contact">
       <h2>Téléphone</h2>
       <h3>0555 555 555</h3>
       <h2>Adresse</h2>
@@ -226,5 +254,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/greenSock.js"></script>
   </body>
 </html>

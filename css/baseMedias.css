@@ -27,7 +27,7 @@
     transition: all 0.4s ease-in-out;
     border-bottom: 2px solid #373737;
   }
-  /* #navigation.responsive {
+  #navigation.responsive {
     height: 38rem;
   }
 
@@ -39,7 +39,7 @@
     position: relative;
     top: 4rem;
     font-size: 3rem;
-  } */
+  }
 }
 
 /************** PAGE ACCUEIL *************/
@@ -185,15 +185,15 @@
   .titreAbout {
     font-size: 3.7rem;
   }
-  .row {
+  #row {
     max-width: 50rem;
     padding: 0 3rem;
   }
-  .row [class^="col-"]:not(:last-child) {
+  #row [class^="col-"]:not(:last-child) {
     margin-right: 0;
     margin-bottom: 6rem;
   }
-  .row [class^="col-"] {
+  #row [class^="col-"] {
     width: 100% !important;
   }
   .composition_photo {
@@ -371,13 +371,13 @@
 /************** SECTION CONTACT *************/
 
 @media (max-width: 768px) {
-  .contact {
+  #contact {
     height: 20rem;
   }
-  .contact h2 {
+  #contact h2 {
     font-size: 5rem;
   }
-  .contact h3 {
+  #contact h3 {
     font-size: 3.5rem;
   }
   .medias {
@@ -387,13 +387,13 @@
 }
 
 @media (max-width: 425px) {
-  .contact h2 {
+  #contact h2 {
     font-size: 3.5rem;
   }
-  .contact h3 {
+  #contact h3 {
     font-size: 2.5rem;
   }
-  .contact p {
+  #contact p {
     font-size: 2rem;
   }
   .medias {
