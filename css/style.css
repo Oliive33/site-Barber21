@@ -41,6 +41,7 @@ body {
   font-family: "Kaushan Script";
   margin: auto;
   color: #373737;
+  font-weight: bolder;
 }
 #navigation a:active {
   font-size: 4rem;
