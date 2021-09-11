@@ -130,7 +130,7 @@
 
 @media (max-width: 497px) {
   header {
-    height: 60vh;
+    height: 70vh;
   }
 
   h1 {
@@ -147,7 +147,7 @@
   header #arrow {
     height: 4.5rem;
     width: 4.5rem;
-    top: 54%;
+    top: 60%;
     font-size: 2.5rem;
     line-height: 4.5rem;
   }
@@ -168,7 +168,6 @@
   header #arrow {
     height: 4.5rem;
     width: 4.5rem;
-    top: 54%;
     font-size: 2.5rem;
     line-height: 4.5rem;
   }
