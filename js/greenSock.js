@@ -1,19 +1,33 @@
 const lienNav = document.querySelectorAll(".lienNav");
 const navigation = document.getElementById("navigation");
+const icone = document.querySelector(".icon");
 const arrow = document.getElementById("arrow");
 const titrePrincipal = document.querySelector("h1");
 const titreSecondaire = document.querySelector("header h2");
 
 window.addEventListener("load", () => {
-  const TL = gsap.timeline();
+  const TL = gsap.timeline({
+    defaults: {
+      duration: 1,
+      ease: "power2",
+    },
+  });
 
   TL.to(navigation, { autoAlpha: 1, y: 0, ease: "power3.in" })
-    .staggerTo(lienNav, 2, { autoAlpha: 1, y: 0, ease: "power2.out" }, 0.5)
+    .to(icone, { autoAlpha: 1, y: 0 })
 
-    .to(titrePrincipal, 1, { autoAlpha: 1, y: 0, ease: "power2.out" })
+    .staggerTo(lienNav, 1, { autoAlpha: 1, y: 0 }, 0.4)
 
-    .to(titreSecondaire, 1, { autoAlpha: 1, y: 0, ease: "power2.out" })
-    .to(arrow, 2, { autoAlpha: 1, ease: "power3.out" });
+    .to(titrePrincipal, 1, {
+      autoAlpha: 1,
+      y: 0,
+    })
+
+    .to(titreSecondaire, 1, {
+      autoAlpha: 1,
+      y: 0,
+    })
+    .to(arrow, 2, { autoAlpha: 1 });
 
   TL.play();
 });
